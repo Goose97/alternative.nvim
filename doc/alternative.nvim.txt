@@ -221,8 +221,8 @@ alternative.setup({opts})                                *alternative.setup()*
     keymaps = {
       -- Set to false to disable the default keymap for specific actions
       -- alternative_next = false,
-      alternative_next = "<C-.>",
-      alternative_prev = "<C-,>",
+      alternative_next = ">",
+      alternative_prev = "<",
     },
   }
 <
@@ -233,11 +233,11 @@ alternative.setup({opts})                                *alternative.setup()*
 
   Action name                           Mapping      Lua API ~
   -----------------------------------------------------------------------------------------------------------------
-  alternative_next                      <C-.>        vim.keymap.set({ "n", "v" }, "<C-.>", function()
+  alternative_next                      >            vim.keymap.set({ "n", "v" }, ">", function()
                                                        require("alternative").alternate("forward")
                                                      end)
   -----------------------------------------------------------------------------------------------------------------
-  alternative_prev                      <C-,>        vim.keymap.set({ "n", "v" }, "<C-.>", function()
+  alternative_prev                      <            vim.keymap.set({ "n", "v" }, "<", function()
                                                        require("alternative").alternate("backward")
                                                      end)
 

@@ -7,8 +7,8 @@ local default_config = {
   keymaps = {
     -- Set to false to disable the default keymap for specific actions
     -- alternative_next = false,
-    alternative_next = "<C-.>",
-    alternative_prev = "<C-,>",
+    alternative_next = ">",
+    alternative_prev = "<",
   },
 }
 

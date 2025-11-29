@@ -110,8 +110,8 @@ require("alternative").setup({
     keymaps = {
         -- Set to false to disable the default keymap for specific actions
         -- alternative_next = false,
-        alternative_next = "<C-.>",
-        alternative_prev = "<C-,>",
+        alternative_next = ">",
+        alternative_prev = "<",
     },
 }
 ```
@@ -124,8 +124,8 @@ The default configuration comes with a set of default keymaps:
 
 | Action | Keymap | Description |
 | -      | -      | -           |
-| alternative_next | <C-.> | Trigger alternative rule in forward direction |
-| alternative_prev | <C-,> | Trigger alternative rule in backward direction |
+| alternative_next | > | Trigger alternative rule in forward direction |
+| alternative_prev | < | Trigger alternative rule in backward direction |
 
 The direction matters when a rule has multiple outputs. A simple example is the `number_increment_decrement` rule: `forward` will increase and `backword` will decrease the number. Another example is cycling between variants of a word:
 
